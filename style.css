@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+nav{
+    background-color: crimson;
+}
+nav > a:visited{
+    color: #333;
+}
+nav > a::first-letter{
+    text-transform:uppercase;
+}
+nav > a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+nav > a:active{
+    color: magenta;
+}
+nav > a:hover, nav >a:focus{
+    background-color: beige;
+}
+
+/* nav > a:last-child{
+    color: white;
+} */
+
+
+/* START OF MAIN  SECTION =======*/
+
+.container{
+    width: 90%;
+    height: 300px;
+    background-color: rgb(247, 209, 196);
+    margin-inline: auto;
+    margin-block: 30px;
+    position: relative;
+    box-shadow:inset 0px 10px 20px 5px black;
+   
+}
+.container div{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow:inset 0px 10px 20px 5px black;
+}
+
+.container div[class="box1"]{
+    width: 70%;
+    height: 70%;
+    background-color: bisque;
+}
+.container div[id]{
+    width: 70%;
+    height: 70%;
+    background-color: khaki;
+}
+[class~='inner']{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(196, 186, 88);
+}
+[class$='bottom']{
+    border-radius: 20px;
+}
+[class^='bott']{
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    background-color: rgb(146, 138, 65);
+}
+
+[class*='ox'], [id*='ox']{
+    border-radius: 20px;
+}
+/* END OF MAIN  SECTION =========*/
+
+/* START OF FORM SECTION =========*/
+
+form[action='index.php']{
+    background-color: #444;
+}
+
+form[name*='tac'] input[type='text']{
+    background-color: firebrick;
+}
+form[name*='tac'] input[type='text']::placeholder{
+    color: whitesmoke;
+}
+form[name*='tac'] label{
+    font-weight: 900;
+}
+
+form[action='index.php'] label{
+    font-size: 22px;
+    text-decoration: overline;
+    text-shadow: 3px 3px 3px white;
+    
+}
+.myP{
+    height: 100vh;
+    width: 100vw;
+    /* margin: 16px; */
+    border: 3px solid crimson;
+    line-height: 50px;
+    font-family: 'Lemon', serif;
+    letter-spacing: 5px;
+}
+.parent{
+    font-size: 2em;
+}
+.rem{
+    font-size: 1rem;
+}
+.em{
+    font-size: 1em;
+}
+/* END OF FORM  SECTION =========*/
